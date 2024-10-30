@@ -1,0 +1,105 @@
+/* Style Umum */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+}
+
+header {
+    background: #2e8b57;
+    color: white;
+    padding: 1.5em;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+section {
+    padding: 2em;
+    text-align: center;
+}
+
+/* Animasi Intro */
+#intro {
+    position: relative;
+    height: 350px;
+    background: linear-gradient(135deg, #e6e6e6, #ffffff);
+    overflow: hidden;
+}
+
+#animation {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: url('https://via.placeholder.com/120') no-repeat center center;
+    background-size: contain;
+    animation: floatAnimation 4s ease-in-out infinite;
+}
+
+@keyframes floatAnimation {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+    100% { transform: translateY(0); }
+}
+
+/* Style Jenis dan Harga */
+.jenis-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    margin-top: 2em;
+}
+
+.jenis-item {
+    background: #fff;
+    padding: 1em;
+    width: 40%;
+    max-width: 300px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.jenis-item:hover {
+    transform: scale(1.05);
+}
+
+.jenis-image {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+}
+
+.harga-list {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.harga-item {
+    background: #2e8b57;
+    color: white;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* FAQ Style */
+.faq-item {
+    background: #e7f5e1;
+    border-left: 4px solid #2e8b57;
+    padding: 1em;
+    margin: 1em auto;
+    width: 70%;
+    border-radius: 5px;
+}
